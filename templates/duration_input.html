@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Integer Input Example</title>
+</head>
+<body>
+    <h1>Enter an Integer</h1>
+    <form method="POST">
+        <input type="text" name="duration" placeholder="Enter an integer" required>
+        <button type="submit">Submit</button>
+    </form>
+    <img src="static/images/bandwidth_chart.png" alt="Sample PNG Image">
+    {% if error_message %}
+        <p style="color: red;">{{ error_message }}</p>
+    {% endif %}
+</body>
+</html>
